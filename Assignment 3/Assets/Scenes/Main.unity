@@ -124,6 +124,7 @@ GameObject:
   - component: {fileID: 102505576}
   - component: {fileID: 102505578}
   - component: {fileID: 102505579}
+  - component: {fileID: 102505580}
   m_Layer: 0
   m_Name: WordManager
   m_TagString: Untagged
@@ -182,6 +183,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordPrefab: {fileID: 1347528892196244, guid: 4c06e1bea520fa0459071d0f34235d57, type: 2}
   wordCanvas: {fileID: 1236677887}
+--- !u!114 &102505580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 102505575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 897c098800633144e9d45995747f78ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wordManager: {fileID: 102505576}
+  wordDelay: 1.5
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
