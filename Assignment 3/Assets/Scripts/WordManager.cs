@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class WordManager : MonoBehaviour {
 
@@ -51,6 +52,10 @@ public class WordManager : MonoBehaviour {
             hasActiveWord = false;
             words.Remove(activeWord);
             ScoreScript.scoreValue += 10;
+        }
+        if (ScoreScript.scoreValue == 270)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
 
     }

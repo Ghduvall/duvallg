@@ -19,7 +19,7 @@ public class WordGenerator : MonoBehaviour {
     public static int newLine = 0;
     
 
-    static string m_path = Application.dataPath + "/Resources/data 1.txt";
+    public static string m_path = Application.dataPath + "/Resources/data 1.txt";
     public static FileInfo theSourceFile = new FileInfo(m_path);
     public static StreamReader reader = theSourceFile.OpenText();
 
@@ -53,7 +53,7 @@ public class WordGenerator : MonoBehaviour {
 
         
 
-        if (newLine != 20)
+        if (newLine != 36)
         {
             newLine = newLine + 1;
             
@@ -64,6 +64,7 @@ public class WordGenerator : MonoBehaviour {
         }
         else
         {
+            
             return endGame();
         }
 
