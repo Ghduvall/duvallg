@@ -22,6 +22,8 @@ public class WordManager : MonoBehaviour {
 
         words.Add(word);
 
+        
+
 
     }
 

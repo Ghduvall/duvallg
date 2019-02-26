@@ -80,7 +80,7 @@ public class WordGenerator : MonoBehaviour {
         wordList = new[] { text };
 
         int randomIndex = Random.Range(0, wordList.Length);
-        //wordList not being assigned 
+        
 
         string randomWord = wordList[randomIndex];
 
