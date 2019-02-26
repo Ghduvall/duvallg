@@ -15,10 +15,13 @@ public class WordManager : MonoBehaviour {
 
     public void AddWord()
     {
+        
         Word word = new Word(WordGenerator.GetRandomWord(), wordSpawner.SpawnWord());
         Debug.Log(word.word);
 
         words.Add(word);
+
+
     }
 
     public void TypeLetter(char letter)
@@ -47,6 +50,7 @@ public class WordManager : MonoBehaviour {
         {
             hasActiveWord = false;
             words.Remove(activeWord);
+            ScoreScript.scoreValue += 10;
         }
 
     }
