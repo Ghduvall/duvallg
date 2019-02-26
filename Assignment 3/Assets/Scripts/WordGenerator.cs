@@ -92,7 +92,7 @@ public class WordGenerator : MonoBehaviour {
 
     public static string endGame()
     {
-        print(txt);
+        //print(txt);
         return txt;
     }
 
