@@ -58,5 +58,9 @@ public class ChangeScene : MonoBehaviour
         //Debug.Log(saveName.nName);
         SceneManager.LoadScene(3);
     }
+    public void sceneEnd()
+    {
+        SceneManager.LoadScene(4);
+    }
     
 }
