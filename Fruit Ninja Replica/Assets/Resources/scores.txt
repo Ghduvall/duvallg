@@ -2,4 +2,4 @@ test,999
 grant,90
 pp,80
 lol,17
-ok,6
+pope,10

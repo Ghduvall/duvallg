@@ -12,7 +12,7 @@ public class GameScore : MonoBehaviour
     public Text scoreText;
     public static string score = "Score: ";
     public static int playerIndex;
-    public static bool funMode = false;
+    //public static bool funMode = false;
 
 
     public Text gameTimer;
@@ -36,18 +36,16 @@ public class GameScore : MonoBehaviour
 
     public void funModeCheck()
     {
-        if (funMode == true)
+        if (MultiOptions.funModeValue == true)
         {
          
-            if (currentTimer > 60)
+            if (currentTimer > 5)
             {
                 SceneManager.LoadScene(4);
             }
         }
         else if(playerScore == 10)
         {
-
-            //playerIndex = playerScore;
             SceneManager.LoadScene(4);
         }
     }

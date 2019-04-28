@@ -40,6 +40,7 @@ public class ChangeScene : MonoBehaviour
 
     public void sceneIntro()
     {
+        GameScore.currentTimer = 0;
         GameScore.playerScore = 0;
         SceneManager.LoadScene(0);
     }
