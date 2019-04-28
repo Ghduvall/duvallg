@@ -1,5 +1,5 @@
-Test,100
-Test1,99
-Test2,98
-Test9,9
-Test0,01
+test,999
+grant,90
+pp,80
+lol,17
+haey,5

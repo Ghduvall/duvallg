@@ -212,6 +212,7 @@ MonoBehaviour:
   saveOptionsBtn: {fileID: 0}
   startBtn: {fileID: 0}
   restartBtn: {fileID: 0}
+  saveName: {fileID: 924140509}
 --- !u!1 &505329278
 GameObject:
   m_ObjectHideFlags: 0
@@ -382,6 +383,7 @@ GameObject:
   - component: {fileID: 924140508}
   - component: {fileID: 924140507}
   - component: {fileID: 924140506}
+  - component: {fileID: 924140509}
   m_Layer: 5
   m_Name: UsernameInput
   m_TagString: Untagged
@@ -511,6 +513,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 924140504}
   m_CullTransparentMesh: 0
+--- !u!114 &924140509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 924140504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9ed1dcf2ba416f469b96b83670ff53c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NewName: {fileID: 924140506}
 --- !u!1 &933157606
 GameObject:
   m_ObjectHideFlags: 0

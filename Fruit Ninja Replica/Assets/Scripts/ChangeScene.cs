@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System;
 
 public class ChangeScene : MonoBehaviour
 {
@@ -12,19 +13,27 @@ public class ChangeScene : MonoBehaviour
     public Button startBtn;
     public Button restartBtn;
 
+    public SaveName saveName;
+
     
     // Start is called before the first frame update
     void Start()
     {
-        introContinueBtn.onClick.AddListener(scenePreScore);
+        
+            introContinueBtn.onClick.AddListener(scenePreScore);
 
-        optionsBtn.onClick.AddListener(sceneOptions);
+            optionsBtn.onClick.AddListener(sceneOptions);
 
-        saveOptionsBtn.onClick.AddListener(sceneIntro);
+            saveOptionsBtn.onClick.AddListener(sceneIntro);
 
-        startBtn.onClick.AddListener(sceneMain);
+            startBtn.onClick.AddListener(sceneMain);
 
-        restartBtn.onClick.AddListener(sceneIntro);
+            restartBtn.onClick.AddListener(sceneIntro);
+
+
+
+       
+        
 
 
     }
@@ -44,6 +53,9 @@ public class ChangeScene : MonoBehaviour
     }
     public void sceneMain()
     {
+        //Debug.Log(saveName.nName);
+        saveName.nameInput();
+        //Debug.Log(saveName.nName);
         SceneManager.LoadScene(3);
     }
     

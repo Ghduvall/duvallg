@@ -11,6 +11,13 @@ public class GameScore : MonoBehaviour
     public static int playerScore = 0;
     public Text scoreText;
     public static string score = "Score: ";
+    public static int playerIndex;
+    public static bool funMode = false;
+
+
+    public Text gameTimer;
+    public static string timer = "Time: ";
+    public static float currentTimer = 0f;
 
     // Start is called before the first frame update
     void Start()
@@ -22,9 +29,25 @@ public class GameScore : MonoBehaviour
     void Update()
     {
         scoreText.text = score + playerScore.ToString();
-        
-        if (playerScore == 10)
+        gameTimer.text = timer + currentTimer.ToString("F0");
+        currentTimer += Time.deltaTime;
+        funModeCheck();
+    }
+
+    public void funModeCheck()
+    {
+        if (funMode == true)
         {
+         
+            if (currentTimer > 60)
+            {
+                SceneManager.LoadScene(4);
+            }
+        }
+        else if(playerScore == 10)
+        {
+
+            //playerIndex = playerScore;
             SceneManager.LoadScene(4);
         }
     }

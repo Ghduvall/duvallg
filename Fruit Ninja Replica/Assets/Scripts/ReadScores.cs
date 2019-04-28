@@ -34,6 +34,7 @@ public class ReadScores : MonoBehaviour
             HighScores.text += fields[0] + " : " + fields[1] + "\n";
             scores_read += 1;
         }
+        reader.Close();
 
     }
 }
